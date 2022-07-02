@@ -38,9 +38,15 @@ reader.question("What would you like to calculate?", function(input){
 	}
 
 	if (mathSymbol==="*"){
-		const product = num1 / num2;
+		const product = num1 * num2;
 		console.log("product:", product);
 	}
+
+	if (mathSymbol==="√"){
+		const sqrt = Math.sqrt(num1);
+		console.log("square root:", sqrt);
+	}
+
 
 	// This line closes the connection to the command line interface.
 	reader.close()
